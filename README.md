@@ -18,7 +18,7 @@ The location of the client will continuously sync between admin and client using
 The location points from the client will go to the cloud and in real-time it’ll get updated in the admin
 UI. There is no delay between the updates so it shows accurate location of the client
 We also hosted our idea in a website at https://assaminnovate.herokuapp.com/ and uploaded a
-demonstration video here 
+demonstration video [here] (https://youtu.be/FjAtXw-mpoA)
 
 ## Technology Used
 1. Security Camera (Webcam, CCTV, IP Camera, etc)
