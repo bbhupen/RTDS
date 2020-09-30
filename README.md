@@ -18,17 +18,20 @@ The location of the client will continuously sync between admin and client using
 The location points from the client will go to the cloud and in real-time it’ll get updated in the admin
 UI. There is no delay between the updates so it shows accurate location of the client
 We also hosted our idea in a website at https://assaminnovate.herokuapp.com/ and uploaded a
-demonstration video here
-Technology Used
-• Security Camera (Webcam, CCTV, IP Camera, etc)
-• Any Device with GPS or Internet (Phone, Laptop, Smart Watch, etc)
-• Geo Location API
-• ML-5 Library for Training Models
-• Node.js Server computing
-• Mapbox API
-• Heroku (Hosting the website)
-• Firebase Firestore as database
-Machine Learning Object Detection
+demonstration video here 
+
+## Technology Used
+1. Security Camera (Webcam, CCTV, IP Camera, etc)
+2. Any Device with GPS or Internet (Phone, Laptop, Smart Watch, etc)
+3. Geo Location API
+4. ML-5 Library for Training Models
+5. Node.js Server computing
+6. Mapbox API
+7. Heroku (Hosting the website)
+8. Firebase Firestore as database
+
+
+## Machine Learning Object Detection
 Ml5-Object-Detector on COCO model was used for Object detection. p5.js was used to provide a
 canvas to camera on which object detection was processed.
 This was tested on several images from google to detect and frame the objects classes and return an
