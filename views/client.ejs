@@ -1,0 +1,155 @@
+  <%- include("partials/header.ejs")  %>
+
+  <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">USER DASHBOARD</h1>
+                        <h1 class="page-subhead-line">Welcome To The User Panel</h1>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="main-box mb-red">
+                            <a href="#">
+                                <i class="fa fa-bolt fa-5x"></i>
+                                <h5 id="os">Loading</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-box mb-dull">
+                            <a href="#">
+                                <i class="fa fa-plug fa-5x"></i>
+                                <h5 id = 'cpu'>Loading</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-box mb-pink">
+                            <a href="#">
+                                <i class="fa fa-video-camera fa-5x"></i>
+                                <h5 id="identity">Waiting</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+				<div >
+         <div class="d-flex justify-content-around" style="margin-top: 50px;">
+             <a class="btn btn-success btn-lg" id="start">Start Tracking</a>
+             <a class="btn btn-success btn-lg" id="stop">Stop Tracking</a>
+         </div>
+
+         <div id='map' class="card" style='height: 500px; margin-top: 40px; margin-bottom: 10px;'></div>
+         </div>
+     </div>
+
+               
+
+
+                <div class="row">
+
+                    <div class="col-md-8">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">
+                                <h4 class="list-group-item-heading">LISTED CAMERAS</h4>
+                                <p class="list-group-item-text" style="line-height: 30px;">
+                                    Camera 1 ---> (26.1426° N, 91.6435° E)
+                                </p>
+                            </a>
+                        </div>
+                        <br />
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="////www.youtube.com/embed/D64VK5pSv3g"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <i class="fa fa-bell fa-fw"></i>Browser Compatibility Test
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="list-group">
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-check fa-fw"></i>Monzilla Firefox
+                                    <span class="pull-right text-muted small"><em>29 September 2020</em>
+                                    </span>
+                                    </a>
+									
+									<a href="#" class="list-group-item">
+                                        <i class="fa fa-check fa-fw"></i>Google Chrome
+                                    <span class="pull-right text-muted small"><em>29 September 2020</em>
+                                    </span>
+                                    </a>
+									
+									<a href="#" class="list-group-item">
+                                        <i class="fa fa-times fa-fw"></i>Internet Explorer
+                                    <span class="pull-right text-muted small"><em>29 September 2020</em>
+                                    </span>
+                                    </a>
+									
+									<a href="#" class="list-group-item">
+                                        <i class="fa fa-check fa-fw"></i>Mobile Chrome
+                                    <span class="pull-right text-muted small"><em>29 September 2020</em>
+                                    </span>
+                                    </a>
+                            
+                                </div>
+                                <!-- /.list-group -->
+                                <a href="#" class="btn btn-info btn-block">Add New Test</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/.Row-->
+                <hr />
+                
+                <!--/.Row-->
+                <hr />
+                <div class="row" style="padding-bottom: 100px; `">
+                    <div class="col-md-12">
+                        <div id="comments-sec">
+                            <h4><strong>Report Issue</strong></h4>
+                            <hr />
+
+
+                            <div class="form-group  ">
+                                <label>Subject</label>
+                                <input type="text" class="form-control" required="required" placeholder="Enter Subject Of Ticket" />
+                            </div>
+                            <div class="form-group ">
+                                <label>Description</label>
+                                <textarea class="form-control" rows="8"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success">Post</button>
+                            </div>
+                        </div>
+
+                    </div>
+                  
+                </div>
+                <!--/.ROW-->
+
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/ClientJS/0.1.11/client.min.js" integrity="sha512-MwKUpp841sot4mmGDfVcpJxb4vcaYHnpyn17CTHT3RUm585khw5gnRM6xwDm15aJ3sfpf6d4P8FLLfQKAo3mfA==" crossorigin="anonymous"></script>
+ <script defer src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+<script defer src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<script defer src="/js/client.js"></script>
+
+  <%- include("partials/footer.ejs")  %>
